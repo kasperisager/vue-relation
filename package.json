@@ -1,0 +1,23 @@
+{
+  "name": "vue-relation",
+  "version": "1.0.0",
+  "description": "A set of Vue.js mixins for modelling relations between components",
+  "main": "dist/index.js",
+  "repository": "kasperisager/vue-relation",
+  "author": "Kasper Isager <kasperisager@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard",
+    "prepare": "babel lib -d dist"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "standard": "^10.0.2"
+  }
+}
