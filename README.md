@@ -17,13 +17,13 @@ $ yarn add vue-relation
 ## Usage
 
 ```js
-import {hasOne, memberOf} from 'vue-relation';
+import {relation, hasOne, memberOf} from 'vue-relation';
 
-const relation = Symbol('relation')
+const family = relation()
 
 const parent = {
   mixins: [
-    hasOne(relation, 'child')
+    hasOne(family, 'child')
   ],
   created () {
     console.log(this.child)
@@ -32,7 +32,7 @@ const parent = {
 
 const child = {
   mixins: [
-    memberOf(relation, 'parent')
+    memberOf(family, 'parent')
   ],
   created () {
     console.log(this.parent)

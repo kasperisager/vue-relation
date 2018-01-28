@@ -1,6 +1,6 @@
 {
   "name": "vue-relation",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A set of Vue.js mixins for modelling relations between components",
   "main": "dist/index.js",
   "repository": "kasperisager/vue-relation",
